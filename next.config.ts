@@ -1,0 +1,20 @@
+import type { NextConfig } from "next";
+
+// Served from https://open-kirrberg.github.io/nollidogs/ via GitHub Pages,
+// so we statically export and prefix all routes/assets with the repo name.
+const basePath = process.env.NODE_ENV === "production" ? "/nollidogs" : "";
+
+const nextConfig: NextConfig = {
+  output: "export",
+  basePath,
+  // Exposed to client code so the asset() helper can prefix static asset paths.
+  env: { NEXT_PUBLIC_BASE_PATH: basePath },
+  // GitHub Pages can't run the Next.js image optimizer.
+  images: { unoptimized: true },
+  // Avoids redirect issues for nested routes on static hosting.
+  trailingSlash: true,
+  // The shared design system ships as ESM/TSX that Next must transpile.
+  transpilePackages: ["@mind-studio/ui"],
+};
+
+export default nextConfig;
