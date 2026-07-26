@@ -21,6 +21,9 @@ import { asset } from "@/lib/asset";
  * Tracking). Neue Bilder einfach in `tiles` ergänzen.
  */
 const tiles = [
+  { src: "/images/dog-405f9617-83b3-4c30-9f67-8faa5508c4d6.jpg", alt: "Hund mit blauer Maulschlaufe im Gras" },
+  { src: "/images/dog-dc361803-05e5-45e3-a30e-10185692640f.jpg", alt: "Hund entspannt auf der Wiese" },
+  { src: "/images/dog-fbccf5cf-77d2-45b0-98e8-f0777f4db099.jpg", alt: "Hund in der Natur" },
   { src: "/images/dog-2710be2a-c57b-4b42-a854-8983c64436ef.jpg", alt: "Nolli im Gras" },
   { src: "/images/dog-2e102b10-93fe-48d0-b452-f13b3e8a0de3.jpg", alt: "Nolli in der Natur" },
   { src: "/images/dog-3ffcafb7-8f48-40b2-9185-19fd5cac09b8.jpg", alt: "Nolli draußen" },

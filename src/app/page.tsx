@@ -60,8 +60,8 @@ export default function HomePage() {
               style={{ borderRadius: "62% 38% 55% 45% / 48% 52% 48% 52%" }}
             >
               <Image
-                src={asset("/images/dog-628f6ae8-4d57-4a03-bc59-ff91f357ad8d.jpg")}
-                alt="Nolli ganz nah im Gras"
+                src={asset("/images/dog-405f9617-83b3-4c30-9f67-8faa5508c4d6.jpg")}
+                alt="Hund mit blauer Maulschlaufe im Gras"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -121,8 +121,8 @@ export default function HomePage() {
           <div className="relative md:col-span-2">
             <div className="relative aspect-square overflow-hidden rounded-[2rem] shadow-lg ring-1 ring-black/5">
               <Image
-                src={asset("/images/dog-2e102b10-93fe-48d0-b452-f13b3e8a0de3.jpg")}
-                alt="Nolli in der Natur"
+                src={asset("/images/dog-dc361803-05e5-45e3-a30e-10185692640f.jpg")}
+                alt="Hund entspannt auf der Wiese"
                 fill
                 sizes="(max-width: 768px) 100vw, 40vw"
                 className="object-cover"
