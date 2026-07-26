@@ -22,7 +22,7 @@ export default function ImpressumPage() {
             <br />
             {site.address.street}
             <br />
-            {site.address.city}
+            {site.address.postalCode} {site.address.city}
           </p>
         </section>
 
@@ -46,8 +46,7 @@ export default function ImpressumPage() {
             Erlaubnis zur gewerbsmäßigen Ausbildung von Hunden und der Ausbildung
             der Hundehalter gemäß § 11 Abs. 1 Nr. 8f Tierschutzgesetz.
             <br />
-            {/* ⚠️ erteilende Behörde ergänzen */}
-            Erteilt durch: [zuständige Behörde]
+            Erteilt durch: {site.supervisoryAuthority}
           </p>
         </section>
 
@@ -68,11 +67,6 @@ export default function ImpressumPage() {
             Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich.
           </p>
         </section>
-
-        <p className="text-xs text-muted-foreground">
-          Hinweis: Mit [ ] markierte Angaben sind noch zu ergänzen, bevor die
-          Seite live geht.
-        </p>
       </div>
     </div>
   );

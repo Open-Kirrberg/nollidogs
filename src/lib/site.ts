@@ -13,9 +13,12 @@ export const site = {
   whatsapp: "4917631623178",
   address: {
     street: "Mispelweg 16",
+    postalCode: "66424",
     city: "Homburg",
     region: "Saarland",
   },
+  // Erteilende Behörde der §11-Erlaubnis (Pflichtangabe nach § 5 DDG).
+  supervisoryAuthority: "Saarpfalz-Kreis, Veterinäramt",
   // Trainingsgelände (öffentlich) – für Impressums-Anschrift ggf. abweichend.
   trainingLocation: {
     name: "Trainingsgelände Vogelturm",

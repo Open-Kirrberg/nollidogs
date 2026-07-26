@@ -63,9 +63,10 @@ export default function UeberMichPage() {
           <div className="md:col-span-2">
             <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] shadow-lg ring-1 ring-black/5">
               <Image
-                src={asset("/images/dog-dc361803-05e5-45e3-a30e-10185692640f.jpg")}
-                alt="Hund entspannt auf der Wiese"
+                src={asset("/images/hunde/wolfsgrauer-hund-hoch.webp")}
+                alt="Wolfsgrauer Hund liegt entspannt im Gras"
                 fill
+                priority
                 sizes="(max-width: 768px) 100vw, 40vw"
                 className="object-cover"
               />
@@ -108,7 +109,7 @@ export default function UeberMichPage() {
             <span className="kicker mb-2 justify-center">Wofür ich stehe</span>
             <h2 className="text-3xl sm:text-4xl">Meine Werte</h2>
           </div>
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {werte.map((w) => (
               <Card key={w.title} className="border-border/60 text-center">
                 <CardContent className="flex flex-col items-center gap-3 p-7">

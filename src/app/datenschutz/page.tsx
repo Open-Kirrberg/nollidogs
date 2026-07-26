@@ -16,11 +16,12 @@ export default function DatenschutzPage() {
             1. Verantwortlicher
           </h2>
           <p className="mt-2">
-            {site.owner} ({site.fullName}), {site.address.city}. E-Mail:{" "}
+            {site.owner} ({site.fullName}), {site.address.street},{" "}
+            {site.address.postalCode} {site.address.city}. E-Mail:{" "}
             <a className="underline" href={`mailto:${site.email}`}>
               {site.email}
             </a>
-            . {/* ⚠️ vollständige Anschrift siehe Impressum */}
+            .
           </p>
         </section>
 

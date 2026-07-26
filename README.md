@@ -27,7 +27,8 @@ pnpm typecheck
 | Trainingsangebote | `src/data/training.ts` |
 | Workshops (Termine) | `src/data/workshops.ts` |
 | Markentheme / Farben | `src/lib/theme.ts` |
-| Fotos / Instagram-Galerie | `public/images/` bzw. `src/components/instagram-feed.tsx` |
+| Fotos (Alt-Texte, Slider-Auswahl) | `src/data/photos.ts`, Dateien in `public/images/hunde/` |
+| Instagram-Galerie (Beitrags-Links) | `src/data/instagram.ts` |
 
 Workshops werden anhand des Datums automatisch in „kommende“ und „vergangene“
 getrennt (`partitionWorkshops`).
@@ -38,19 +39,29 @@ getrennt (`partitionWorkshops`).
   in `src/lib/site.ts`, Nummer `site.whatsapp` im Format `49…`) und **Instagram**.
   Telefon und E-Mail (für Impressum/DSGVO nötig) bleiben als Nebenkanäle.
 - **Instagram-Galerie:** `src/components/instagram-feed.tsx` zeigt eine schnelle,
-  trackingfreie Galerie aus `public/images` und verlinkt aufs Profil.
-- **Automatisch aktualisierter Feed** (statisches Hosting hat keinen Server,
-  Instagram keinen freien API-Feed): clientseitiges Widget nötig. Empfehlung
-  [behold.so](https://behold.so) (kostenlos, DSGVO-freundlich). Schritte stehen
-  als Kommentar oben in `instagram-feed.tsx`.
+  trackingfreie Galerie. Die Kacheln kommen aus `src/data/instagram.ts` und
+  verlinken **auf den jeweiligen Beitrag**, sobald dort ein `shortcode`
+  eingetragen ist (das Stück aus der Post-URL zwischen `/p/` und dem Slash).
+  Ohne Shortcode führt die Kachel aufs Profil – bewusst so, damit nie ein
+  falscher Beitrag verlinkt wird.
+- **Warum kein automatischer Feed?** Instagram hat die öffentlichen Zugänge
+  geschlossen: Die Profilseite liefert serverseitig keine Beitragsdaten,
+  `/api/v1/users/web_profile_info/` antwortet mit 400, und ein Headless-Browser
+  bekommt eine Fehlerseite. Ein Live-Feed braucht daher entweder ein Widget wie
+  [behold.so](https://behold.so) (kostenlos, DSGVO-freundlich – dann aber
+  Datenschutzerklärung um den Drittanbieter ergänzen) oder die Instagram Graph
+  API mit Business-Account und App-Review. Details als Kommentar oben in
+  `src/data/instagram.ts`.
 
 ## Offene Punkte vor dem Livegang
 
-Siehe `content.md` (Abschnitt „Offene Punkte für Carmen“): **Impressums-Anschrift**
-(die registrierte Geschäftsadresse – kann vom Trainingsgelände Vogelturm abweichen)
-und die erteilende Behörde, Preise, kommende Termine, echte Fotos, finales Logo.
-Mit `[ ]` markierte Stellen im Impressum sind Platzhalter. WhatsApp-Nummer
-(0176 31623178) und Telefon sind bereits eingetragen.
+Impressum und Datenschutz sind vollständig, ohne Platzhalter. Zu prüfen bleibt:
+
+- **Erteilende Behörde** der §11-Erlaubnis (`site.supervisoryAuthority`, aktuell
+  „Saarpfalz-Kreis, Veterinäramt“) gegen Carmens Erlaubnisbescheid abgleichen.
+- **Instagram-Shortcodes** in `src/data/instagram.ts` ergänzen, damit die
+  Kacheln auf die echten Beiträge statt aufs Profil führen.
+- Preise, kommende Termine und finales Logo – siehe `content.md`.
 
 ## Besonderheit (übernommen von swvkirrberg)
 

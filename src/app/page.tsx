@@ -4,7 +4,9 @@ import { ArrowRight, Heart, MapPin, Quote } from "lucide-react";
 import { Badge, Button, Card, CardContent } from "@/components/ui";
 import { WhatsAppIcon } from "@/components/icons";
 import { InstagramFeed } from "@/components/instagram-feed";
+import { PhotoStrip } from "@/components/photo-strip";
 import { trainingAngebote } from "@/data/training";
+import { hundeFotos } from "@/data/photos";
 import { partitionWorkshops } from "@/data/workshops";
 import { site, whatsapp } from "@/lib/site";
 import { asset } from "@/lib/asset";
@@ -60,8 +62,8 @@ export default function HomePage() {
               style={{ borderRadius: "62% 38% 55% 45% / 48% 52% 48% 52%" }}
             >
               <Image
-                src={asset("/images/dog-405f9617-83b3-4c30-9f67-8faa5508c4d6.jpg")}
-                alt="Hund mit blauer Maulschlaufe im Gras"
+                src={asset("/images/hunde/aussie-red-merle-hoch.webp")}
+                alt="Red-Merle Australian Shepherd sitzt aufmerksam im Gras"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -115,14 +117,22 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ──────────────────── Foto-Slider ──────────────────── */}
+      <PhotoStrip
+        kicker="Aus dem Trainingsalltag"
+        title="Hunde, mit denen ich arbeite"
+        text="Jeder Hund bringt seine eigene Geschichte mit – vom aufgeregten Junghund bis zum Vierbeiner, der erst wieder Vertrauen fassen muss."
+        photos={hundeFotos}
+      />
+
       {/* ──────────────────── Über mich (Teaser) ──────────────────── */}
       <section className="bg-accent/60">
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 md:grid-cols-5">
           <div className="relative md:col-span-2">
             <div className="relative aspect-square overflow-hidden rounded-[2rem] shadow-lg ring-1 ring-black/5">
               <Image
-                src={asset("/images/dog-dc361803-05e5-45e3-a30e-10185692640f.jpg")}
-                alt="Hund entspannt auf der Wiese"
+                src={asset("/images/hunde/wolfsgrauer-hund.webp")}
+                alt="Wolfsgrauer Hund liegt entspannt im Gras"
                 fill
                 sizes="(max-width: 768px) 100vw, 40vw"
                 className="object-cover"

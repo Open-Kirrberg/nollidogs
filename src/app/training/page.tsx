@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Check } from "lucide-react";
 import { Button, Card, CardContent } from "@/components/ui";
 import { PageHeader } from "@/components/page-header";
 import { WhatsAppIcon } from "@/components/icons";
 import { trainingAngebote } from "@/data/training";
+import { trainingImpressionen } from "@/data/photos";
 import { whatsapp } from "@/lib/site";
+import { asset } from "@/lib/asset";
 
 export const metadata: Metadata = {
   title: "Training",
@@ -62,6 +65,29 @@ export default function TrainingPage() {
             </CardContent>
           </Card>
         ))}
+      </section>
+
+      {/* ── Impressionen: lockert die Angebotsliste vor dem CTA auf ── */}
+      <section className="mx-auto max-w-6xl px-4 pb-16">
+        <div className="grid gap-4 sm:grid-cols-3">
+          {trainingImpressionen.map((photo, i) => (
+            <div
+              key={photo.src}
+              className={`relative aspect-[4/3] overflow-hidden rounded-[1.75rem] shadow-sm ring-1 ring-black/5 ${
+                // mittlere Kachel auf Desktop leicht angehoben – ruhiges Versetzt-Muster
+                i === 1 ? "sm:-translate-y-4" : ""
+              }`}
+            >
+              <Image
+                src={asset(photo.src)}
+                alt={photo.alt}
+                fill
+                sizes="(max-width: 640px) 100vw, 33vw"
+                className="object-cover"
+              />
+            </div>
+          ))}
+        </div>
       </section>
 
       <section className="bg-accent/60">

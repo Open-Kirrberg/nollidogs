@@ -25,6 +25,8 @@ export function SiteFooter() {
           <p className="mb-2 font-bold text-white">Kontakt</p>
           <p>{site.owner}</p>
           <p>
+            {site.trainingLocation.name}
+            <br />
             {site.trainingLocation.street}, {site.trainingLocation.postalCode}{" "}
             {site.trainingLocation.city}
           </p>
