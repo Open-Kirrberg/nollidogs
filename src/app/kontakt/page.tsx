@@ -3,7 +3,7 @@ import { Instagram, Facebook, MapPin, Phone } from "lucide-react";
 import { Button } from "@/components/ui";
 import { PageHeader } from "@/components/page-header";
 import { WhatsAppIcon } from "@/components/icons";
-import { InstagramFeed } from "@/components/instagram-feed";
+import { InstagramCta } from "@/components/instagram-cta";
 import { site, whatsapp } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -133,7 +133,8 @@ export default function KontaktPage() {
         </p>
       </section>
 
-      <InstagramFeed />
+      {/* /kontakt hat sonst keine Fotos – hier darf die Galerie mit ran. */}
+      <InstagramCta withGallery />
     </>
   );
 }

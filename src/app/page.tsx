@@ -3,10 +3,10 @@ import Link from "next/link";
 import { ArrowRight, Heart, MapPin, Quote } from "lucide-react";
 import { Badge, Button, Card, CardContent } from "@/components/ui";
 import { WhatsAppIcon } from "@/components/icons";
-import { InstagramFeed } from "@/components/instagram-feed";
+import { InstagramCta } from "@/components/instagram-cta";
 import { PhotoStrip } from "@/components/photo-strip";
 import { trainingAngebote } from "@/data/training";
-import { hundeFotos } from "@/data/photos";
+import { sliderFotos, ueberMichTeaser } from "@/data/photos";
 import { partitionWorkshops } from "@/data/workshops";
 import { site, whatsapp } from "@/lib/site";
 import { asset } from "@/lib/asset";
@@ -122,7 +122,7 @@ export default function HomePage() {
         kicker="Aus dem Trainingsalltag"
         title="Hunde, mit denen ich arbeite"
         text="Jeder Hund bringt seine eigene Geschichte mit – vom aufgeregten Junghund bis zum Vierbeiner, der erst wieder Vertrauen fassen muss."
-        photos={hundeFotos}
+        photos={sliderFotos}
       />
 
       {/* ──────────────────── Über mich (Teaser) ──────────────────── */}
@@ -131,8 +131,8 @@ export default function HomePage() {
           <div className="relative md:col-span-2">
             <div className="relative aspect-square overflow-hidden rounded-[2rem] shadow-lg ring-1 ring-black/5">
               <Image
-                src={asset("/images/hunde/wolfsgrauer-hund.webp")}
-                alt="Wolfsgrauer Hund liegt entspannt im Gras"
+                src={asset(ueberMichTeaser.src)}
+                alt={ueberMichTeaser.alt}
                 fill
                 sizes="(max-width: 768px) 100vw, 40vw"
                 className="object-cover"
@@ -214,8 +214,8 @@ export default function HomePage() {
         </section>
       )}
 
-      {/* ──────────────────── Instagram ──────────────────── */}
-      <InstagramFeed />
+      {/* ── Instagram: ohne Galerie, der Slider oben zeigt die Fotos schon ── */}
+      <InstagramCta />
 
       {/* ──────────────────── Kontakt-CTA ──────────────────── */}
       <section className="mx-auto max-w-6xl px-4 py-16">

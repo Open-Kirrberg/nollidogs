@@ -66,6 +66,17 @@ export const hundeFotos = [
   },
 ] as const satisfies readonly Photo[];
 
+/** Foto im Über-mich-Teaser auf der Startseite. */
+export const ueberMichTeaser: Photo = hundeFotos[4];
+
+/*
+ * Slider-Auswahl der Startseite: alles außer dem Teaser-Foto, das weiter
+ * unten auf derselben Seite noch einmal groß kommt.
+ */
+export const sliderFotos: readonly Photo[] = hundeFotos.filter(
+  (photo) => photo.src !== ueberMichTeaser.src
+);
+
 /*
  * Kleine Auswahl für das 3er-Band auf /training. Bewusst Motive mit Leine,
  * Geschirr und Mensch im Bild – das zeigt Training statt nur Hundeportraits.

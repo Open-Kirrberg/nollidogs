@@ -38,12 +38,16 @@ getrennt (`partitionWorkshops`).
 - **Kein E-Mail-Formular:** Kontakt läuft primär über **WhatsApp** (`whatsapp()`
   in `src/lib/site.ts`, Nummer `site.whatsapp` im Format `49…`) und **Instagram**.
   Telefon und E-Mail (für Impressum/DSGVO nötig) bleiben als Nebenkanäle.
-- **Instagram-Galerie:** `src/components/instagram-feed.tsx` zeigt eine schnelle,
-  trackingfreie Galerie. Die Kacheln kommen aus `src/data/instagram.ts` und
-  verlinken **auf den jeweiligen Beitrag**, sobald dort ein `shortcode`
-  eingetragen ist (das Stück aus der Post-URL zwischen `/p/` und dem Slash).
-  Ohne Shortcode führt die Kachel aufs Profil – bewusst so, damit nie ein
-  falscher Beitrag verlinkt wird.
+- **Instagram-Sektion:** `src/components/instagram-cta.tsx` ist eine Einladung
+  zum Folgen – **kein nachgebauter Feed**. Die Bilder sind eigene Fotos, keine
+  Beiträge, und die Texte sagen das auch so. Bitte nicht zu „die neuesten
+  Posts“ umschreiben, sonst verspricht die Seite etwas, das sie nicht hält.
+  Auf `/kontakt` kommen vier Foto-Kacheln dazu (`withGallery`), auf der
+  Startseite nicht – dort trägt schon der Slider die Fotos.
+- **Einzelne Beiträge verlinken:** Trägst du in `src/data/instagram.ts` bei
+  einer Kachel den `shortcode` ein (das Stück aus der Post-URL zwischen `/p/`
+  und dem Slash), öffnet sie genau diesen Beitrag. Ohne Shortcode führt sie
+  aufs Profil – bewusst so, damit nie ein falscher Beitrag verlinkt wird.
 - **Warum kein automatischer Feed?** Instagram hat die öffentlichen Zugänge
   geschlossen: Die Profilseite liefert serverseitig keine Beitragsdaten,
   `/api/v1/users/web_profile_info/` antwortet mit 400, und ein Headless-Browser
