@@ -63,8 +63,8 @@ export default function UeberMichPage() {
           <div className="md:col-span-2">
             <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] shadow-lg ring-1 ring-black/5">
               <Image
-                src={asset("/images/nolli-dog-brown.jpg")}
-                alt="Hund entspannt im Gras"
+                src={asset("/images/dog-2e102b10-93fe-48d0-b452-f13b3e8a0de3.jpg")}
+                alt="Nolli in der Natur"
                 fill
                 sizes="(max-width: 768px) 100vw, 40vw"
                 className="object-cover"
