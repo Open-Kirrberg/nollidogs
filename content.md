@@ -17,12 +17,12 @@ Inhaltssammlung für die Website. Quellen: Instagram
 | Name | Nolli Dogs – Hundetraining |
 | Inhaberin | Carmen Noll |
 | Ort | Homburg (Saarland, Saarpfalz-Kreis) |
-| Selbstständig seit | 2023 |
-| Erfahrung | ~13 Jahre Hundetraining |
+| Mit Nolli Dogs seit | 2023 |
+| Erfahrung | Hundetrainerin seit 2014 |
 | Qualifikation | Erlaubnis nach §11 Abs.1 Nr.8f TierSchG |
 | E-Mail | Nolli-Dogs@web.de |
 | Telefon | ⚠️ fehlt – von Carmen erfragen |
-| Adresse (Impressum) | ⚠️ Straße/Trainingsplatz erfragen |
+| Adresse (Impressum) | Mispelweg 16, Homburg (PLZ nicht angegeben) |
 | Instagram | https://www.instagram.com/nollidogs/ (@nollidogs) |
 | Facebook | https://www.facebook.com/p/Nollidogs-61550942548359/ |
 | Bewertungen | FB: 100 % empfohlen (7 Bewertungen) |
@@ -41,11 +41,12 @@ Inhaltssammlung für die Website. Quellen: Instagram
 
 Leitthemen für Texte: Individualität, „dort abholen, wo ihr steht“,
 Partnerschaft / „zum Team werden“, Hund im Mittelpunkt, Spaß & positive Stimmung.
+Weitere Ziele und Werte: **Beziehung vor Erziehung** und **Orientierung am Menschen**.
 
 ## 3. Über mich (Entwurf)
 
-> Hallo, ich bin Carmen Noll. Seit über 13 Jahren dreht sich mein Leben um Hunde
-> – seit 2023 hauptberuflich mit Nolli Dogs. Den Namen verdanke ich meinem Rudel:
+> Hallo, ich bin Carmen Noll. Seit 2014 dreht sich mein Leben um Hunde – seit 2023
+> mit Nolli Dogs. Den Namen verdanke ich meinem Rudel:
 > Ebby, Akira, Malia und Yaro. Jeder von ihnen ist anders – und genau das hat mir
 > gezeigt: Es gibt kein Training von der Stange. Ich hole dich und deinen Hund da
 > ab, wo ihr gerade steht, und gehe euren Weg gemeinsam mit euch – bis ihr als

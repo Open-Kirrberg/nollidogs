@@ -20,10 +20,9 @@ export default function ImpressumPage() {
             <br />
             {site.owner}
             <br />
-            {/* ⚠️ Straße & PLZ von Carmen ergänzen */}
-            [Straße &amp; Hausnummer]
+            {site.address.street}
             <br />
-            [PLZ] {site.address.city}
+            {site.address.city}
           </p>
         </section>
 

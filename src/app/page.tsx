@@ -60,8 +60,8 @@ export default function HomePage() {
               style={{ borderRadius: "62% 38% 55% 45% / 48% 52% 48% 52%" }}
             >
               <Image
-                src={asset("/images/golden-trees.jpg")}
-                alt="Hund beim Training in der Natur"
+                src={asset("/images/nolli-dog-black-white.jpg")}
+                alt="Schwarz-weißer Hund in der Natur"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -69,7 +69,7 @@ export default function HomePage() {
               />
             </div>
             <Badge className="absolute -bottom-2 left-6 gap-1.5 rounded-full bg-accent px-4 py-1.5 text-accent-foreground shadow-md">
-              <Heart className="size-3.5" /> seit {site.foundedYear} selbstständig
+              <Heart className="size-3.5" /> mit Nolli Dogs seit {site.foundedYear}
             </Badge>
           </div>
         </div>
@@ -121,8 +121,8 @@ export default function HomePage() {
           <div className="relative md:col-span-2">
             <div className="relative aspect-square overflow-hidden rounded-[2rem] shadow-lg ring-1 ring-black/5">
               <Image
-                src={asset("/images/corgi-park.jpg")}
-                alt="Carmen Noll beim Training mit Hund"
+                src={asset("/images/nolli-dog-brown.jpg")}
+                alt="Hund entspannt im Gras"
                 fill
                 sizes="(max-width: 768px) 100vw, 40vw"
                 className="object-cover"
@@ -133,8 +133,8 @@ export default function HomePage() {
             <span className="kicker mb-2">Wer hinter Nolli Dogs steckt</span>
             <h2 className="text-3xl sm:text-4xl">Hallo, ich bin Carmen</h2>
             <p className="mt-4 leading-relaxed text-foreground/80">
-              Seit über {site.experienceYears} Jahren dreht sich mein Leben um
-              Hunde – seit {site.foundedYear} hauptberuflich mit Nolli Dogs. Den
+              Seit {site.trainingSince} dreht sich mein Leben um Hunde – seit{" "}
+              {site.foundedYear} mit Nolli Dogs. Den
               Namen verdanke ich meinem Rudel: {site.dogs.join(", ")}. Jeder von
               ihnen ist anders – und genau das hat mir gezeigt, dass es kein
               Training von der Stange gibt.

@@ -1,7 +1,15 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, BadgeCheck, Dog, Heart, Sparkles } from "lucide-react";
+import {
+  ArrowRight,
+  BadgeCheck,
+  Compass,
+  Dog,
+  Handshake,
+  Heart,
+  Sparkles,
+} from "lucide-react";
 import { Button, Card, CardContent } from "@/components/ui";
 import { PageHeader } from "@/components/page-header";
 import { site } from "@/lib/site";
@@ -10,7 +18,7 @@ import { asset } from "@/lib/asset";
 export const metadata: Metadata = {
   title: "Über mich",
   description:
-    "Carmen Noll – zertifizierte Hundetrainerin in Homburg mit über 13 Jahren Erfahrung. Die Geschichte und Philosophie hinter Nolli Dogs.",
+    "Carmen Noll – zertifizierte Hundetrainerin in Homburg. Seit 2014 dreht sich ihr Leben um Hunde. Die Geschichte und Philosophie hinter Nolli Dogs.",
 };
 
 const werte = [
@@ -27,7 +35,17 @@ const werte = [
   {
     icon: BadgeCheck,
     title: "Fundiert",
-    text: `${site.certification} – über ${site.experienceYears} Jahre Erfahrung.`,
+    text: `${site.certification} – Hundetraining seit ${site.trainingSince}.`,
+  },
+  {
+    icon: Handshake,
+    title: "Beziehung vor Erziehung",
+    text: "Eine vertrauensvolle Beziehung ist die Basis für gemeinsames Lernen und ein entspanntes Miteinander.",
+  },
+  {
+    icon: Compass,
+    title: "Orientierung am Menschen",
+    text: "Ich unterstütze euch dabei, eurem Hund klar, fair und verständlich Orientierung zu geben.",
   },
 ];
 
@@ -45,8 +63,8 @@ export default function UeberMichPage() {
           <div className="md:col-span-2">
             <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] shadow-lg ring-1 ring-black/5">
               <Image
-                src={asset("/images/golden-puppy-grass.jpg")}
-                alt="Carmen Noll mit Hund"
+                src={asset("/images/nolli-dog-brown.jpg")}
+                alt="Hund entspannt im Gras"
                 fill
                 sizes="(max-width: 768px) 100vw, 40vw"
                 className="object-cover"
@@ -56,8 +74,8 @@ export default function UeberMichPage() {
 
           <div className="space-y-4 leading-relaxed text-foreground/85 md:col-span-3">
             <p>
-              Seit über {site.experienceYears} Jahren dreht sich mein Leben um
-              Hunde – seit {site.foundedYear} hauptberuflich mit{" "}
+              Seit {site.trainingSince} dreht sich mein Leben um Hunde – seit{" "}
+              {site.foundedYear} mit{" "}
               <strong className="text-foreground">Nolli Dogs</strong>. Den Namen
               verdanke ich meinem Rudel: {site.dogs.join(", ")}.
             </p>
@@ -90,7 +108,7 @@ export default function UeberMichPage() {
             <span className="kicker mb-2 justify-center">Wofür ich stehe</span>
             <h2 className="text-3xl sm:text-4xl">Meine Werte</h2>
           </div>
-          <div className="grid gap-5 sm:grid-cols-3">
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
             {werte.map((w) => (
               <Card key={w.title} className="border-border/60 text-center">
                 <CardContent className="flex flex-col items-center gap-3 p-7">

@@ -20,13 +20,9 @@ import { asset } from "@/lib/asset";
  * Bis dahin: handgepflegte Galerie aus public/images (lädt schnell, kein
  * Tracking). Neue Bilder einfach in `tiles` ergänzen.
  */
-// ⚠️ Platzhalter-Fotos bis Carmen eigene Bilder liefert. Workshop-Flyer liegen
-// bewusst auf /workshops, damit die Galerie ein einheitlicher Foto-Feed bleibt.
 const tiles = [
-  { src: "/images/golden-trees.jpg", alt: "Hund in der Natur" },
-  { src: "/images/corgi-park.jpg", alt: "Hund im Park" },
-  { src: "/images/golden-field.jpg", alt: "Hund auf der Wiese" },
-  { src: "/images/golden-puppy-grass.jpg", alt: "Welpe im Gras" },
+  { src: "/images/nolli-dog-black-white.jpg", alt: "Schwarz-weißer Hund in der Natur" },
+  { src: "/images/nolli-dog-brown.jpg", alt: "Hund entspannt im Gras" },
 ];
 
 export function InstagramFeed() {

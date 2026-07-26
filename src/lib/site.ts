@@ -5,13 +5,14 @@ export const site = {
   claim: "individuell wie du und dein Hund",
   subClaim: "Bei uns steht der Hund im Mittelpunkt.",
   foundedYear: 2023,
-  experienceYears: 13,
+  trainingSince: 2014,
   certification: "Erlaubnis nach §11 Abs. 1 Nr. 8f TierSchG",
   email: "Nolli-Dogs@web.de",
   phone: "0176 31623178",
   // Internationales Format für wa.me-Links (ohne führende 0, +49).
   whatsapp: "4917631623178",
   address: {
+    street: "Mispelweg 16",
     city: "Homburg",
     region: "Saarland",
   },

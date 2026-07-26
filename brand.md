@@ -13,10 +13,10 @@ Homburg (Saarland). Grundlage für nollidogs.de, umgesetzt als eigenes Theme
 ## 1. Markenkern
 
 - **Wer:** Carmen Noll, zertifizierte Hundetrainerin (Erlaubnis nach §11 Abs.1
-  Nr.8f TierSchG), ~13 Jahre Erfahrung, selbstständig seit 2023. Eigenes Rudel:
+  Nr.8f TierSchG), Hundetrainerin seit 2014, mit Nolli Dogs seit 2023. Eigenes Rudel:
   Ebby, Akira, Malia, Yaro.
 - **Essenz:** *Individuell wie du und dein Hund.* Der Hund steht im Mittelpunkt.
-- **Werte:** individuell · einfühlsam · partnerschaftlich · naturverbunden · fundiert
+- **Werte:** individuell · einfühlsam · partnerschaftlich · naturverbunden · fundiert · Beziehung vor Erziehung · Orientierung am Menschen
 - **Claim:** „individuell wie du und dein Hund“
   (Sekundär: „Bei uns steht der Hund im Mittelpunkt.“)
 
