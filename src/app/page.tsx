@@ -138,10 +138,13 @@ export default function HomePage() {
                 className="object-cover"
               />
             </div>
+            <p className="mt-2 text-center text-xs text-muted-foreground">
+              Kundenhund aus dem Training
+            </p>
           </div>
           <div className="md:col-span-3">
-            <span className="kicker mb-2">Wer hinter Nolli Dogs steckt</span>
-            <h2 className="text-3xl sm:text-4xl">Hallo, ich bin Carmen</h2>
+            <span className="kicker mb-2">Über mich</span>
+            <h2 className="text-3xl sm:text-4xl">Die Trainerin hinter Nolli Dogs</h2>
             <p className="mt-4 leading-relaxed text-foreground/80">
               Seit {site.trainingSince} dreht sich mein Leben um Hunde – seit{" "}
               {site.foundedYear} mit Nolli Dogs. Den

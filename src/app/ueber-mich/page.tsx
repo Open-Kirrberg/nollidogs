@@ -53,8 +53,8 @@ export default function UeberMichPage() {
   return (
     <>
       <PageHeader
-        kicker="Wer hinter Nolli Dogs steckt"
-        title="Hallo, ich bin Carmen"
+        kicker="Über mich"
+        title="Die Trainerin hinter Nolli Dogs"
         intro="Trainerin aus Leidenschaft – und Rudelchefin von vier ganz unterschiedlichen Charakteren."
       />
 
@@ -71,6 +71,9 @@ export default function UeberMichPage() {
                 className="object-cover"
               />
             </div>
+            <p className="mt-2 text-center text-xs text-muted-foreground">
+              Kundenhund aus dem Training
+            </p>
           </div>
 
           <div className="space-y-4 leading-relaxed text-foreground/85 md:col-span-3">
