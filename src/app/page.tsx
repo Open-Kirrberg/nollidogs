@@ -129,7 +129,7 @@ export default function HomePage() {
       <section className="bg-accent/60">
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 md:grid-cols-5">
           <div className="relative md:col-span-2">
-            <div className="relative aspect-square overflow-hidden rounded-[2rem] shadow-lg ring-1 ring-black/5">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-lg ring-1 ring-black/5">
               <Image
                 src={asset(ueberMichTeaser.src)}
                 alt={ueberMichTeaser.alt}

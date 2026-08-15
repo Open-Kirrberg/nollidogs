@@ -13,7 +13,9 @@ Aufbau nach `PRD.md`, `brand.md` und `content.md`.
 ## Entwicklung
 
 ```bash
-pnpm install        # @mind-studio/ui kommt aus GitHub Packages (Auth nötig)
+# @mind-studio/ui kommt aus GitHub Packages – Token mit read:packages nötig,
+# z. B. via gh (gh auth refresh -s read:packages):
+GH_PACKAGES_TOKEN="$(gh auth token)" pnpm install
 pnpm dev            # http://localhost:3092
 pnpm build          # statischer Produktions-Build nach out/
 pnpm typecheck
@@ -23,7 +25,7 @@ pnpm typecheck
 
 | Was | Wo |
 |---|---|
-| Name, Kontakt, WhatsApp, Social, Rudel, Trainingsgelände | `src/lib/site.ts` |
+| Name, Kontakt, WhatsApp, Social, Rudel, Trainingsgelände, Behörden, USt-ID, Stand der Rechtstexte | `src/lib/site.ts` |
 | Trainingsangebote | `src/data/training.ts` |
 | Workshops (Termine) | `src/data/workshops.ts` |
 | Markentheme / Farben | `src/lib/theme.ts` |

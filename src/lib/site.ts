@@ -17,12 +17,22 @@ export const site = {
     city: "Homburg",
     region: "Saarland",
   },
-  // Erteilende Behörde der §11-Erlaubnis (Pflichtangabe nach § 5 DDG).
-  supervisoryAuthority: "Saarpfalz-Kreis, Veterinäramt",
+  // Kleinunternehmerregelung: keine Umsatzsteuer-ID. Falls doch vorhanden, hier eintragen.
+  vatId: null as string | null,
+  // Zuständige Datenschutz-Aufsichtsbehörde (Saarland).
+  dataProtectionAuthority: {
+    name: "Unabhängiges Datenschutzzentrum Saarland",
+    street: "Fritz-Dobisch-Straße 12",
+    postalCode: "66111",
+    city: "Saarbrücken",
+    url: "https://www.datenschutz.saarland.de/",
+  },
+  // Stand der Rechtstexte (Impressum/Datenschutz).
+  legalUpdated: "August 2026",
   // Trainingsgelände (öffentlich) – für Impressums-Anschrift ggf. abweichend.
   trainingLocation: {
     name: "Trainingsgelände Vogelturm",
-    street: "Bierbacher Str. 44",
+    street: "Mispelweg 16",
     postalCode: "66424",
     city: "Homburg",
   },

@@ -66,8 +66,11 @@ export const hundeFotos = [
   },
 ] as const satisfies readonly Photo[];
 
-/** Foto im Über-mich-Teaser auf der Startseite. */
-export const ueberMichTeaser: Photo = hundeFotos[4];
+/** Foto im Über-mich-Teaser (Startseite) und auf /ueber-mich: das Rudel auf dem Trainingsgelände. */
+export const ueberMichTeaser: Photo = {
+  src: "/images/hunde/vier-hunde-trainingsgelaende.webp",
+  alt: "Vier Hunde auf dem Trainingsgelände, im Hintergrund eine Hundewippe",
+};
 
 /*
  * Slider-Auswahl der Startseite: alles außer dem Teaser-Foto, das weiter
