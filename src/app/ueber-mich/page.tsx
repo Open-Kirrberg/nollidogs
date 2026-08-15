@@ -13,7 +13,6 @@ import {
 import { Button, Card, CardContent } from "@/components/ui";
 import { PageHeader } from "@/components/page-header";
 import { site } from "@/lib/site";
-import { ueberMichTeaser } from "@/data/photos";
 import { asset } from "@/lib/asset";
 
 export const metadata: Metadata = {
@@ -62,10 +61,10 @@ export default function UeberMichPage() {
       <section className="mx-auto max-w-6xl px-4 py-16">
         <div className="grid items-start gap-10 md:grid-cols-5">
           <div className="md:col-span-2">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-lg ring-1 ring-black/5">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] shadow-lg ring-1 ring-black/5">
               <Image
-                src={asset(ueberMichTeaser.src)}
-                alt={ueberMichTeaser.alt}
+                src={asset("/images/hunde/wolfsgrauer-hund-hoch.webp")}
+                alt="Wolfsgrauer Hund liegt entspannt im Gras"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, 40vw"

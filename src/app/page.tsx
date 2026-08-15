@@ -6,7 +6,7 @@ import { WhatsAppIcon } from "@/components/icons";
 import { InstagramCta } from "@/components/instagram-cta";
 import { PhotoStrip } from "@/components/photo-strip";
 import { trainingAngebote } from "@/data/training";
-import { sliderFotos, ueberMichTeaser } from "@/data/photos";
+import { heroFoto, sliderFotos, ueberMichTeaser } from "@/data/photos";
 import { partitionWorkshops } from "@/data/workshops";
 import { site, whatsapp } from "@/lib/site";
 import { asset } from "@/lib/asset";
@@ -58,12 +58,12 @@ export default function HomePage() {
               aria-hidden
             />
             <div
-              className="relative aspect-[4/5] overflow-hidden shadow-xl ring-1 ring-black/5"
+              className="relative aspect-[4/3] overflow-hidden shadow-xl ring-1 ring-black/5"
               style={{ borderRadius: "62% 38% 55% 45% / 48% 52% 48% 52%" }}
             >
               <Image
-                src={asset("/images/hunde/aussie-red-merle-hoch.webp")}
-                alt="Red-Merle Australian Shepherd sitzt aufmerksam im Gras"
+                src={asset(heroFoto.src)}
+                alt={heroFoto.alt}
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -129,7 +129,7 @@ export default function HomePage() {
       <section className="bg-accent/60">
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 md:grid-cols-5">
           <div className="relative md:col-span-2">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-lg ring-1 ring-black/5">
+            <div className="relative aspect-square overflow-hidden rounded-[2rem] shadow-lg ring-1 ring-black/5">
               <Image
                 src={asset(ueberMichTeaser.src)}
                 alt={ueberMichTeaser.alt}
